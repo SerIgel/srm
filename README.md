@@ -3,10 +3,11 @@ ______
 ## Simple Bash tool for safe removing files
 
 ### Installation: 
-- Clone the repo
+- Clone the repo and give `srm` access rights:
 ```bash
 cd ~
 git clone https://github.com/vseteplee/gitflow
+chmod a+x srm
 ```
 - You have two options:
   - Move `srm` file to `~/.local/bin`
@@ -18,3 +19,8 @@ git clone https://github.com/vseteplee/gitflow
     echo "export PATH=\$PATH:$HOME/.local/bin" >> ~/.bashrc
     ```
     Change `~/.bashrc` to `zshrc` if you're using zsh or to any of yours configuration files
+
+### Usage:
+```bash
+srm /path/to/file
+```
